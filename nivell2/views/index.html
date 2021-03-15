@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <title>Rocket Survival</title>
+  </head>
+  <body>
+    <header>
+      <h1>Rocket Survival</h1>
+    </header>
+    <main>
+      <!-- rockets -->
+      <img src="../images/rocket.png" alt="Rocket1" id="Rocket1" hidden />
+      <img src="../images/rocket.png" alt="Rocket1" id="Rocket2" hidden />
+    </main>
+
+    <footer>
+      <button onclick="addRockets(event)">Create Rockets</button>
+      <button class="rocket1" disabled="true" onclick="throttleRocket(0)">
+        Accelerate Rocket 1
+      </button>
+      <button class="rocket1" disabled="true" onclick="brakeRocket(0)">
+        Break Rocket 1
+      </button>
+
+      <button class="rocket2" disabled="true" onclick="throttleRocket(1)">
+        Accelerate Rocket 2
+      </button>
+      <button class="rocket2" disabled="true" onclick="brakeRocket(1)">
+        Break Rocket 2
+      </button>
+    </footer>
+
+    <script src="../models/Rocket.js"></script>
+    <script src="../controllers/RocketController.js"></script>
+  </body>
+</html>

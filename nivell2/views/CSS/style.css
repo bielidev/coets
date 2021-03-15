@@ -1,0 +1,77 @@
+/* Reset Browsers styles  */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Bangers', cursive;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../images/header.jpg');
+  background-size: cover;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 60px;
+  color: whitesmoke;
+}
+
+main {
+  background-image: url('../../images/background.jpg');
+  background-size: cover;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+main img {
+  height: 150px;
+  margin: 0 50px;
+}
+
+main img.goDown {
+  animation: goDown 10s forwards;
+  animation-iteration-count: infinite;
+}
+
+main img.goUp {
+  animation: goUp 10s forwards;
+  animation-iteration-count: infinite;
+}
+
+footer {
+  background: grey;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+footer button {
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+/* ANIMATIONS */
+@keyframes goDown {
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+@keyframes goUp {
+  to {
+    transform: translateY(-100vh);
+  }
+}

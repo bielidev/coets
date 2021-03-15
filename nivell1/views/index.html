@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Rockets!</h1>
+    <div>
+      <button onclick="addRocket1(event)">Create Rocket 1</button>
+      <button onclick="addRocket2(event)">Create Rocket 2</button>
+    </div>
+    <br />
+    <div>
+      <button onclick="throttleRocket(0)">Accelerate Rocket 1</button>
+      <button onclick="throttleRocket(1)">Accelerate Rocket 2</button>
+      <button onclick="brakeRocket(0)">Break Rocket 1</button>
+      <button onclick="brakeRocket(1)">Break Rocket 2</button>
+    </div>
+    <br />
+    <div>
+      <button onclick="printRocketInfo(0)">Print rocket 1 info</button>
+      <button onclick="printRocketInfo(1)">Print rocket 2 info</button>
+      <button onclick="printRocketInfo()">Print all rocket</button>
+    </div>
+
+    <div id="rockets">Output: <br /></div>
+
+    <script src="../models/Rocket.js"></script>
+    <script src="../controllers/RocketController.js"></script>
+  </body>
+</html>
