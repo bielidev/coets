@@ -13,7 +13,7 @@ class Rocket {
   }
 
   public getPrintData(): string {
-    return `${this.code}: ${this.drives}`;
+    return `${this.code}: ${this.drives} => Potencia actual ${this.currentPower}`;
   }
 
   public throttle(): string {

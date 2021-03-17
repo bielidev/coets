@@ -23,12 +23,14 @@ function printRocket(rocket: Rocket): void {
 function throttleRocket(index: number) {
   if (index >= 0 && index < rockets.length) {
     rockets[index].throttle();
+    printRocketInfo(index);
   }
 }
 
 function brakeRocket(index: number) {
   if (index >= 0 && index < rockets.length) {
     rockets[index].brake();
+    printRocketInfo(index);
   }
 }
 

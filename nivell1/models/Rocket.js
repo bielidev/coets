@@ -12,7 +12,7 @@ var Rocket = /** @class */ (function () {
         }, 0);
     };
     Rocket.prototype.getPrintData = function () {
-        return this.code + ": " + this.drives;
+        return this.code + ": " + this.drives + " => Potencia actual " + this.currentPower;
     };
     Rocket.prototype.throttle = function () {
         this.currentPower += 10;

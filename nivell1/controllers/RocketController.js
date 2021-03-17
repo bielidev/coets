@@ -20,11 +20,13 @@ function printRocket(rocket) {
 function throttleRocket(index) {
     if (index >= 0 && index < rockets.length) {
         rockets[index].throttle();
+        printRocketInfo(index);
     }
 }
 function brakeRocket(index) {
     if (index >= 0 && index < rockets.length) {
         rockets[index].brake();
+        printRocketInfo(index);
     }
 }
 function printRocketInfo(index) {
